@@ -1,0 +1,61 @@
+{
+  "name": "addvansed-hash",
+  "module": "src\\hash.ts",
+  "type": "commonjs",
+  "main": "dist/hash.js",
+  "version": "2.1.5",
+  "description": "A my package hashing (support deno/bun/npm)",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  },
+  "keywords": [
+    "hashing",
+    " encryption",
+    " jwt",
+    " bcrypt",
+    " rsa",
+    " crypto",
+    " security",
+    " password hashing",
+    " authentication",
+    " typescript",
+    " nodejs",
+    " uuid",
+    " salting",
+    " token",
+    " secure storage",
+    " data protection",
+    " key generation",
+    " cybersecurity",
+    " jwt authentication",
+    " secure passwords",
+    " crypto utilities",
+    " advanced hashing",
+    " secure hash",
+    " cryptographic security",
+    " password management"
+  ],
+  "author": {
+    "name": "tarek",
+    "email": "tarek.mahmod13579@gmail.com",
+    "url": "https://my-web-88e69.web.app"
+  },
+  "license": "MIT",
+  "displayName": "hashing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6tarek/addvansed-hash.git",
+    "directory": "dist"
+  },
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "publisher": "6arek",
+  "homepage": "https://github.com/6tarek/addvansed-hash/blob/main/README.md"
+}
