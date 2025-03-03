@@ -1,7 +1,7 @@
-# **addvansed-hash** v2.0.0 – Extended Edition
+# **addvansed-hash** v3.0.1 – Extended Edition
 
 **Release Date:** 2025-03-03  
-**Author:** [Your Name or Team]
+**Author:** [tarek]
 
 ## **Overview**
 
