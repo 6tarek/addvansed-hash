@@ -2,7 +2,7 @@
   "name": "addvansed-hash",
   "type": "commonjs",
   "main": "dist/index.js",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "description": "A my package hashing (support deno/bun/npm)",
   "scripts": {
     "test": "tsc && node dist/test"
@@ -77,7 +77,7 @@
     "directory": "dist"
   },
   "readme": "README.md",
-  "icon": "icon.png",
+  "icon": "icon.webp",
   "publisher": "6arek",
   "homepage": "https://github.com/6tarek/addvansed-hash/blob/main/README.md"
 }
