@@ -2,7 +2,7 @@
   "name": "addvansed-hash",
   "type": "commonjs",
   "main": "dist/index.js",
-  "version": "3",
+  "version": "3.0.0",
   "description": "A my package hashing (support deno/bun/npm)",
   "scripts": {
     "test": "tsc && node dist/test"
@@ -45,7 +45,24 @@
     "advanced hashing",
     "secure hash",
     "cryptographic security",
-    "password management"
+    "password management",
+    "AES",
+    "RSA-OAEP",
+    "public key encryption",
+    "private key encryption",
+    "ECDSA",
+    "password salting",
+    "HMAC",
+    "digital signatures",
+    "JWE",
+    "public key cryptography",
+    "publicKey / privateKey",
+    "nonce",
+    "token-based authentication",
+    "API security",
+    "hash collisions",
+    "hash-based message authentication",
+    "multi-factor authentication"
   ],
   "author": {
     "name": "tarek",
