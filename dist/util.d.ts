@@ -1,2 +1,2 @@
-export declare function Sync(fun: any): Promise<any>;
-export declare function erroHandel(fun: any): any | Error;
+export declare function Sync(fun: any, ...par: any[]): Promise<any>;
+export declare function erroHandel(fun: any, ...par: any[]): any;

@@ -35,10 +35,11 @@ JWT.RSA = {
         }
     },
     Encrypt(data, key) {
-        return (0, util_2.erroHandel)(JWT.RSABasic.Encrypt(data, key));
+        console.log(JWT.RSABasic.Encrypt);
+        return (0, util_2.erroHandel)(JWT.RSABasic.Encrypt, data, key);
     },
     Decrypt(data, key) {
-        return (0, util_2.erroHandel)(JWT.RSABasic.Decrypt(data, key));
+        return (0, util_2.erroHandel)(JWT.RSABasic.Decrypt, data, key);
     },
 };
 JWT.RSASync = {
@@ -52,6 +53,7 @@ JWT.RSASync = {
                 const hexPrivateKey = privateKey
                     .export({ type: "pkcs1", format: "pem" })
                     .toString("hex");
+                console.log({ hexPrivateKey });
                 resolve({ privateKey: hexPrivateKey, publicKey });
             }
             catch (error) {
@@ -60,32 +62,32 @@ JWT.RSASync = {
         });
     },
     async Encrypt(data, key) {
-        return await (0, util_2.Sync)(JWT.RSA.Encrypt(data, key));
+        return await (0, util_2.Sync)(JWT.RSA.Encrypt, data, key);
     },
     async Decrypt(data, key) {
-        return await (0, util_2.Sync)(JWT.RSA.Decrypt(data, key));
+        return await (0, util_2.Sync)(JWT.RSA.Decrypt, data, key);
     },
 };
 JWT.SHA256 = {
     Sign(payload, secret, options) {
-        return (0, util_2.erroHandel)(JWT.SHA256Basic.Sign(payload, secret, options));
+        return (0, util_2.erroHandel)(JWT.SHA256Basic.Sign, payload, secret, options);
     },
     Decrypt(token, options) {
-        return (0, util_2.erroHandel)(JWT.SHA256Basic.Decrypt(token, options));
+        return (0, util_2.erroHandel)(JWT.SHA256Basic.Decrypt, token, options);
     },
     Verify(token, secret, options) {
-        return (0, util_2.erroHandel)(JWT.SHA256Basic.Verify(token, secret, options));
+        return (0, util_2.erroHandel)(JWT.SHA256Basic.Verify, token, secret, options);
     },
 };
 JWT.SHA256Sync = {
     async Sign(payload, secret, options) {
-        return await (0, util_2.Sync)(JWT.SHA256Basic.Sign(payload, secret, options));
+        return await (0, util_2.Sync)(JWT.SHA256Basic.Sign, payload, secret, options);
     },
     async Decrypt(token, options) {
-        return await (0, util_2.Sync)(JWT.SHA256Basic.Decrypt(token, options));
+        return await (0, util_2.Sync)(JWT.SHA256Basic.Decrypt, token, options);
     },
     async Verify(token, secret, options) {
-        return await (0, util_2.Sync)(JWT.SHA256Basic.Verify(token, secret, options));
+        return await (0, util_2.Sync)(JWT.SHA256Basic.Verify, token, secret, options);
     },
 };
 JWT.RSABasic = {

@@ -44,4 +44,8 @@ interface Sha256SignOptions {
 interface Sha256DecryptOptions {
     diractData?: boolean;
 }
+export interface Keys {
+    privateKey: string;
+    publicKey: any;
+}
 export {};

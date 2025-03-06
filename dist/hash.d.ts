@@ -9,6 +9,15 @@ export declare class Hash extends JWT {
         Match(hash: string, password: string, key: string): Promise<boolean | Error>;
     };
     private static PasswordBasic;
-    ID(): `${string}-${string}-${string}-${string}-${string}`;
+    ID({ short, }: Partial<{
+        short?: {
+            number?: {
+                len?: number;
+            };
+            string?: {
+                len?: number;
+            };
+        };
+    }>): string;
     salt(): string;
 }
